@@ -13,24 +13,27 @@ function CropPagination() {
 
   return (
     <div>
-      <Crop crops={List} currentPage={currentPage} itemsPerPage={itemsPerPage} />
+      <Crop
+        crops={List}
+        currentPage={currentPage}
+        itemsPerPage={itemsPerPage}
+      />
       <div className="pagination">
         <span className="page-number">Page {currentPage}</span>
         <div className="but">
-        <button
-          onClick={() => handlePageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-        >
-          Previous
-        </button>
-        <button
-          onClick={() => handlePageChange(currentPage + 1)}
-          disabled={currentPage * itemsPerPage >= List.length}
-        >
-          Next
-        </button>
+          <button
+            onClick={() => handlePageChange(currentPage - 1)}
+            disabled={currentPage === 1}
+          >
+            Previous
+          </button>
+          <button
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={currentPage * itemsPerPage >= List.length}
+          >
+            Next
+          </button>
         </div>
-        
       </div>
     </div>
   );
