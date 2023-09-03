@@ -1,7 +1,8 @@
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-function Modall(props) {
+
+function Modall(props,cp) {
   return (
     <Modal
       {...props}
@@ -11,7 +12,7 @@ function Modall(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
+   {props.cp}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
