@@ -1,13 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import Modall from "./Modall";
 
-function CropItem({
+function CropItem(
+  {
   image,
   Crop,
   ClimaticSeason,
   SuitableRegions,
   PreferredSoilType,
 }) {
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <div className="cropItem">
       <div style={{ backgroundImage: `url(${image})` }}> </div>
@@ -15,7 +19,13 @@ function CropItem({
       <p> {ClimaticSeason} </p>
       <p> {SuitableRegions} </p>
       <p> {PreferredSoilType} </p>
-      <Link to="#">Read More...</Link>
+      {/* <Link to="/readmore">Read More...</Link> */}
+      <Button variant="primary" onClick={() => setModalShow(true)}>
+       Read More..
+      </Button>
+
+      <Modall show={modalShow}
+        onHide={() => setModalShow(false)}/>
     </div>
   );
 }

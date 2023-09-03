@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Detection = () => {
-  return (
-    <div>Detection</div>
-  )
-}
+  return <div>Detection1</div>;
+};
 
-export default Detection
+export default Detection;
