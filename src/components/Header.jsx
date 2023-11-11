@@ -10,7 +10,7 @@ function Header() {
     <Navbar expand="lg" className="navbar">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          React-Bootstrap
+          GreenX
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

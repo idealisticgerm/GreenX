@@ -1,65 +1,69 @@
 .crop {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .crop .cropTitle {
-    font-family: cursive;
-    font-size: 60px;
-  }
-  
-  .cropList {
-    width: 70vw;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-  }
-  
-  /* crop ITEM STYLING */
-  
-  .cropItem {
-    border-radius: 15px;
-    width: 250px;
-    height: auto;
-    margin: 20px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    background-color: bisque;
-  }
-  .cropItem:hover {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease-in;
-    cursor: pointer;
-  }
-  
-  .cropItem div {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    width: 100%;
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .cropItem h1,
-  .cropItem p,a {
-    margin-left: 20px;
-  }
-  
-  @media only screen and (max-width: 1300px) {
-    .cropList {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  @media only screen and (max-width: 800px) {
-    .cropList {
-      grid-template-columns: 1fr;
-    }
-  }
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.crop .cropTitle {
+  font-family: cursive;
+  font-size: 60px;
+}
 
-  
+.cropList {
+  width: 70vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+/* crop ITEM STYLING */
+
+.cropItem {
+  border-radius: 15px;
+  width: 250px;
+  height: auto;
+  margin: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: bisque;
+}
+.cropItem:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.cropItem .imgg {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cropItem .butt {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.cropItem h3,
+.cropItem p,
+a {
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .cropList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cropList {
+    grid-template-columns: 1fr;
+  }
+}
